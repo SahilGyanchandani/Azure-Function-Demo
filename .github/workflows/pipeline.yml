@@ -22,7 +22,7 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Publish Azure Functions project
-      run: dotnet publish MyAzureFunctionProject -o $(Build.ArtifactStagingDirectory)/publish --configuration Release
+      run: dotnet publish CopyTableFunction -o $(Build.ArtifactStagingDirectory)/publish --configuration Release
 
     - name: Deploy to Azure Functions
       uses: Azure/functions-action@v1
