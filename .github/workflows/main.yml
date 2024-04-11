@@ -1,0 +1,27 @@
+name: Copy Data to Blob Storage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Install Azure CLI
+      uses: azure/cli@v1
+      
+    # - name: Invoke Azure Function
+    #   env:
+    #     AZURE_FUNCTION_APP_NAME: 
+    #     AZURE_FUNCTION_NAME: YourFunctionName
+    #     AZURE_STORAGE_ACCOUNT_NAME: YourStorageAccountName
+    #     AZURE_STORAGE_ACCOUNT_KEY: ${{ secrets.STORAGE_ACCOUNT_KEY }}
+    #   run: |
+    #     az login --service-principal -u ${{ secrets.AZURE_SP_APP_ID }} -p ${{ secrets.AZURE_SP_PASSWORD }} --tenant ${{ secrets.AZURE_TENANT_ID }}
+        # az functionapp function invoke --name $AZURE_FUNCTION_APP_NAME --function-name $AZURE_FUNCTION_NAME --resource-group ${{ secrets.RESOURCE_GROUP }} --account-name $AZURE_STORAGE_ACCOUNT_NAME --account-key $AZURE_STORAGE_ACCOUNT_KEY --data ''
