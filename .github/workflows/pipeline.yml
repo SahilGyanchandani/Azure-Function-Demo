@@ -35,7 +35,7 @@
 
 #Reference:  https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions?tabs=linux%2Cdotnet&pivots=method-template
 
-name: Deploy Sentra.DataImport.Serverless.Azure to Azure Function App - for UAE App
+name: Deploy workflopw
 
 on:
   push:
