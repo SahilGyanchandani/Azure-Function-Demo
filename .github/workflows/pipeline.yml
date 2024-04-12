@@ -29,7 +29,7 @@
 #       with:
 #         app-name: 'DotnetPraticeFunction' # Change this to your Azure Function App name
 #         package: $(Build.ArtifactStagingDirectory)/publish
-#         publish-profile: ${{ secrets.AZURE_FUNCTION_APP_PUBLISH_PROFILE }} # Store your Azure Function App publish profile as a secret
+#         publish-profile: ${{ secrets.AZURE_FUNCTION_APP_PUBLISH_PROFILE }} # xxStore your Azure Function App publish profile as a secret
 
 
 
